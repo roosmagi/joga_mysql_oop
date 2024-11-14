@@ -9,6 +9,9 @@ app.use(bodyParser.json())
 const articleRoutes = require('./routes/article');
 app.use('/', articleRoutes)
 
+const authorRoutes = require('./routes/author')
+app.use('/author', authorRoutes)
+
 
 //app start point
 app.listen(3003, () => {
