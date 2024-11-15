@@ -21,5 +21,6 @@ class ArticleModel extends baseSQLModel {
         const createdArticleId = await super.create(article)
         return createdArticleId
     } 
+
 } 
 module.exports = ArticleModel
